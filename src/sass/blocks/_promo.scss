@@ -4,10 +4,14 @@
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
     &__title {
+        color: #fff;
+        text-shadow: 1px 1px 1px #000; 
         width: 700px;
         margin-top: 10px;
     }
     &__subtitle {
+        color: #fff;
+        text-shadow: 1px 1px 1px #000; 
         position: relative;
         padding-left: 10px;
         z-index: 2;
@@ -15,6 +19,7 @@
         
     }
     &__btns {
+        text-shadow: 1px 1px 1px #000; 
         margin-top: 25px;
         display: flex;
         align-items: center;
@@ -22,10 +27,10 @@
         width: 250px;        
     }
     &__link {
-        color: #000;
+         color: #fff;
         font-weight: bold;
         &:hover {
-            color: #000;
+            color: #fff;
             text-decoration: none;
         }
     }
