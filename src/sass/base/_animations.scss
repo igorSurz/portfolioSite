@@ -1,0 +1,5 @@
+@keyframes turnOver {
+    from {fill: rgba($color: #000, $alpha: 1)}
+    50% {fill: rgba($color: #fff, $alpha: 1)}
+    to {fill: rgba($color: #000, $alpha: 1)}
+}
