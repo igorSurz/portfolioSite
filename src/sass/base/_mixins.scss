@@ -11,3 +11,16 @@
         background: $main-color;
    } 
 }
+@mixin before_circle_aboutMe {
+   &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -7%;
+        left: -15px;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+   } 
+}

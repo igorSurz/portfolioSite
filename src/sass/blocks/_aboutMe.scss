@@ -69,14 +69,17 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		grid-area: skills;
-		width: 570px;
-		// height: 317px;
+		width: 600px;
+	
 		&__block {	
+			@include before_circle_aboutMe;
+			margin-bottom: 20px;
 			position: relative;		
 			display: flex;
+			justify-content: flex-start;
 			flex-wrap: wrap;
 			width: 260px;
-			height: 116px;			
+						
 		}
 		&__title {
 			font-weight: bold;
@@ -84,28 +87,25 @@
 			color: #000000;
 		}
 		&__text {
+			width: 200px;
 			font-weight: 500;
 			margin-top: 6px;
+			margin-left: 60px;
 			font-size: 12px;
 			line-height: 18px;
 			color: #000000;
 		}
-		&__icon {			
-			margin-right: 50px;
-			img {
-				&:before {
-					content: '';
-					position: absolute;
-					z-index: -1;
-					top: 0;
-					left: 0;
-					width: 36px;
-					height: 36px;
-					border-radius: 100%;
-					background: $main-color;
-			   } 
+		&__icon {	
+			width: 25px;
+			height: 25px;		
+			margin-right: 35px;	
 
-			}
+			
+			
+	
+			
+			
+		
 		
 		}
 	}
