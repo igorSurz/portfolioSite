@@ -69,25 +69,20 @@
                 color: #000000;
             }
             &__loadbox {
-                position: relative;
+                width: 350px;
+                height: 14px;
                 margin-top: 27px;
-                &-main {
-                    position: absolute;
-                    width: 265px;
-                    height: 14px;
-                    background: #FFA501;
-                    border-radius: 4px;
-                   
+                background-color: #E8E4DE;
+                border-radius: 4px;
+                span {
+                    display: block;
+                    background: $main-color;
+                    height: 100%;
+                    border-radius: 4px;                                       
                 }
-                &-bg {
-                    width: 350px;
-                    height: 14px;                
-                    background: #E8E4DE;
-                    border-radius: 4px;  
-                }
+               
             }    
         }
-
     }
 
         
