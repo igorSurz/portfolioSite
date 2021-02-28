@@ -1,6 +1,6 @@
 .aboutMe {
-	height: 837px;
-	padding: 117px 0 117px 0;
+	height: 840px;
+	padding: 120px 0 120px 0;
 	&__container {
 		display: grid;
 		justify-content: center;
@@ -16,13 +16,12 @@
 	&__title {
 		font-weight: bold;
 		font-size: 16px;
-		line-height: 24px;
+		line-height: 35px;
 		color: #000000;
 		&:before {
 			content: '';
 			position: absolute;
-			z-index: -1;
-			top: -5px;
+			z-index: -1;			
 			left: -2%;
 			width: 36px;
 			height: 36px;
@@ -40,8 +39,8 @@
 	}
 	&__divider {
 		width: 60px;
-		height: 0px;
-		border: 3px solid #FFA501;
+		height: 4px;
+		background-color: $main-color;
 	}
 	&__text {
 		margin-top: 20px;
@@ -63,14 +62,13 @@
 		grid-area: titleBlock;
 	}
 
-	&__skills{	
+	&__skills {	
 		margin-top: 40px;	
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		grid-area: skills;
-		width: 600px;
-	
+		width: 600px;	
 		&__block {	
 			@include before_circle_aboutMe;
 			margin-bottom: 20px;
@@ -78,8 +76,7 @@
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
-			width: 260px;
-						
+			width: 260px;						
 		}
 		&__title {
 			font-weight: bold;
@@ -89,26 +86,17 @@
 		&__text {
 			width: 200px;
 			font-weight: 500;
-			margin-top: 6px;
+			margin-top: -12px;
 			margin-left: 60px;
 			font-size: 12px;
 			line-height: 18px;
 			color: #000000;
 		}
 		&__icon {	
+			margin-top: 15px;
 			width: 25px;
 			height: 25px;		
-			margin-right: 35px;	
-
-			
-			
-	
-			
-			
-		
-		
+			margin-right: 35px;		
 		}
 	}
-	
-
 }
