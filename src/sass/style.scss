@@ -20,6 +20,9 @@
     width: 60px;
     height: 4px;
     background-color: $main-color;
+    &-middle {
+        margin: 25px auto;
+    }
 }
 
 @import 'blocks/promo';
@@ -29,4 +32,4 @@
 @import 'blocks/menu';
 @import 'blocks/aboutMe';
 @import 'blocks/resume';
-
+@import 'blocks/skills';

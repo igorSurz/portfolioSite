@@ -1,0 +1,94 @@
+.skills {   
+    padding: 120px 10px ;
+    &__title {
+		position: relative;
+		text-align: center;
+		@include before_circle;
+		&:before {
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+        }
+    }    
+    &__subtitle {
+        text-align: center;        
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+        &-card {
+            padding: 0 30px 0 30px;
+            border: 1px solid #000000;
+            img {
+                margin: 30px 0 20px 0;
+            }
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    &__percentage {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 30px 45px;
+        &__card {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &-title {
+                margin-left: 14px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+                @include before_circle;
+                &:before {
+                    top: -12%;
+                }
+            }
+            &-level {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+            }
+            &__loadbox {
+                position: relative;
+                margin-top: 27px;
+                &-main {
+                    position: absolute;
+                    width: 265px;
+                    height: 14px;
+                    background: #FFA501;
+                    border-radius: 4px;
+                   
+                }
+                &-bg {
+                    width: 350px;
+                    height: 14px;                
+                    background: #E8E4DE;
+                    border-radius: 4px;  
+                }
+            }    
+        }
+
+    }
+
+        
+}
