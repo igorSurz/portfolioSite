@@ -1,0 +1,42 @@
+.reviews {
+    padding: 0 0 48px 0;
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+    &__block {
+        margin-top: 60px;
+        display: flex;
+    }
+    &__main {
+        width: 680px;
+        margin-left: 60px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        color: #0D0D0D;
+    }
+    &__marathon {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #646464;
+    }
+    &__text {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;  
+        color: #0D0D0D;
+    }
+    &__avatar {
+        width: 169px;
+        height: 169px;
+    }
+}

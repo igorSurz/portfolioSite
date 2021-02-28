@@ -1,0 +1,16 @@
+.pageup {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 50px;
+	width: 40px;
+	height: 40px;		
+	img {
+		width: 100%;	
+	}
+	&:hover {
+		box-shadow: 0px 0px 40px #FFFFFF;		
+		border-radius: 100%;
+}
+	
+}
