@@ -49,6 +49,11 @@
 		width: 400px;
 		height: 600px;		
 		grid-area: photo;
+		img {
+			height: 100%;
+			height: 100%;
+            object-fit: cover;
+		}
 	}
 
 	&__titleBlock {
