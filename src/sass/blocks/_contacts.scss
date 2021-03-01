@@ -1,0 +1,37 @@
+.contacts {
+    padding: 120px 0 90px 0;
+    &__wrapper {
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+
+    }
+    &__photo {
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+    &__descr {
+        padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__text, &__social  {
+        margin-top: 20px;
+    }
+    &__link {
+        margin-right: 25px;
+        img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+    }    
+  
+}
