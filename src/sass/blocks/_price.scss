@@ -1,0 +1,62 @@
+.price {
+	padding-top: 60px;
+	.divider {
+		margin-top: 30px;
+	}    
+	&__title {
+		position: relative;
+		text-align: center;
+		@include before_circle;
+		&:before {
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__wrapper {
+		margin-top: 60px;
+		padding: 0 50px 0 50px;
+		display: grid;
+		grid-template-columns: repeat(2, 366px);
+		grid-template-rows: repeat(3, 44px);
+		grid-auto-rows: 44px;
+		column-gap: 306px;
+		&__card {
+			padding-left: 25px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			&__title {
+				position: relative;
+				font-weight: bold;
+				font-size: 14px;
+				color: #000000;
+				&:before {
+					content: '';
+					position: absolute;
+					width: 15px;
+					top: 3px;
+					left: -15px;
+					transform: translateX(-50%);
+					height: 15px;
+					background: $main-color;
+					border-radius: 100%;
+
+				}
+			}
+			&__price {
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 21px;
+				color: #000000;
+			}
+			&__descr {
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 18px;
+				color: #000000;
+			}
+		}
+
+	}    
+}
