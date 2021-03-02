@@ -53,6 +53,7 @@
 		}
 	} 
 	.portfolio {
+			padding-top: 30px;
 		&__wrapper {
 			grid-template-columns: repeat(auto-fit, 280px);
 			grid-auto-rows: 280px;
@@ -62,6 +63,15 @@
 				grid-row: unset;
 				grid-column: unset;
 			}
+		}
+	}
+	.price {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fill, 366px);			
+			grid-template-rows: repeat(6, 55px);
+			grid-auto-rows: 44px;
+			column-gap: unset;
+			justify-content: space-around;
 		}
 	}
 	 
@@ -121,6 +131,9 @@
 			grid-template-rows: repeat(3,70px);
 			gap: 40px 100px;			
 		}
+	}
+	.portfolio {
+		padding-top: 30px;
 	}     	
 }
 
@@ -206,7 +219,16 @@
 	} 
 	.portfolio {
 		padding-top: 40px;
-	}    
+	} 
+	.price {
+		&__wrapper {
+			row-gap: 20px;
+			&__card {
+				padding-left: 0;
+				
+			}
+		}
+	}   
 }
 
 @media (max-width: 576px) {
@@ -300,5 +322,11 @@
 			
 		}
 	}  
+	.price {
+		&__wrapper {
+			margin-top: 20px;
+			grid-template-columns: repeat(auto-fill, 250px);
+		}
+	}
 
 }
