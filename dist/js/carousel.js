@@ -1,5 +1,5 @@
 // You can change global variables here:
-var radius = 130; // how big of the radius
+var radius = 200; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 100; // width of images (unit: px)
@@ -33,8 +33,8 @@ ospin.style.height = imgHeight + 'px';
 
 // Size of ground - depend on radius
 var ground = document.getElementById('ground');
-ground.style.width = radius * 3 + 'px';
-ground.style.height = radius * 3 + 'px';
+ground.style.width = radius + 'px';
+ground.style.height = radius + 'px';
 
 function init(delayTime) {
 	for (let i = 0; i < aEle.length; i++) {
@@ -120,9 +120,9 @@ document.onpointerdown = function (e) {
 	return false;
 };
 
-document.onmousewheel = function (e) {
-	e = e || window.event;
-	var d = e.wheelDelta / 20 || -e.detail;
-	radius += d;
-	init(1);
-};
+// document.onmousewheel = function (e) {
+// 	e = e || window.event;
+// 	var d = e.wheelDelta / 20 || -e.detail;
+// 	radius += d;
+// 	init(1);
+// };
